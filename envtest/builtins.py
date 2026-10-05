@@ -2,7 +2,7 @@ import numpy as np
 from scipy.ndimage import gaussian_filter
 
 
-__all__ = ['rand_array', 'smooth_image', "my_mat_solve"]
+__all__ = ['rand_array', 'smooth_image', "my_mat_solve", "pandas_test"]
 
 
 def rand_array(shape):
@@ -13,3 +13,6 @@ def smooth_image(a, sigma=1):
 
 def my_mat_solve(A, b):
     return A.inv()*b
+
+def pandas_test(df):
+    return df.head()
